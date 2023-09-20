@@ -5,8 +5,7 @@ object Main {
   private val Backward: Int = -1
 
   def main(args: Array[String]): Unit = {
-    val input = args(0)
-    Try(input.toInt).fold(_ => printSnailShell(0), printSnailShell)
+    Try(args(0).toInt).fold(_ => printSnailShell(0), printSnailShell)
   }
 
   private def printSnailShell(n: Int): Unit = {
