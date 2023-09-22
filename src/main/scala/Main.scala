@@ -30,8 +30,8 @@ object Main {
       var currentNumber: Int = 1
       val matrix = Array.ofDim[Int](n, n)
 
-      def fillAndIncrease(x: Int, y: Int): Unit = {
-        matrix(x)(y) = currentNumber
+      def fillAndIncrease(y: Int, x: Int): Unit = {
+        matrix(y)(x) = currentNumber
         currentNumber += 1
       }
 
